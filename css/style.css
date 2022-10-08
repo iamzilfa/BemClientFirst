@@ -1,3 +1,133 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .image {
+        background-image: url('/img/Background.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 214px;
+        margin: 40px 70px;
+        border-radius: 24px;
+    }
+    .component-image{
+        background-image: url('/img/Blur\ Gradient.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:top;
+        height: 95vh;
+    }
+}
+
+.style-guide{
+    @apply m-20
+}
+
+.style-guide-svg {
+    @apply flex items-center space-x-6
+}
+
+.style-guide-text {
+    @apply not-italic font-bold text-2xl text-gray-900
+}
+
+.style-guide-subtitle {
+    @apply not-italic font-bold text-base leading-6 text-gray-900 opacity-30
+}
+
+.style-guide-subtitle--button-text{
+    @apply  text-white
+}
+
+.style-guide-buton-title{
+    @apply not-italic text-base leading-6  font-normal text-theGray
+}
+
+.style-guide-paragraph {
+    @apply flex flex-col space-y-4
+}
+
+.heading-space{
+    @apply flex flex-col space-y-6
+}
+
+.style-guide-paragraph-content {
+    @apply flex items-center space-x-5
+}
+
+
+.style-guide-title {
+    @apply not-italic font-bold text-lg leading-6 text-gray-900 opacity-80
+}
+
+.label {
+    background: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.big-heading{
+    @apply font-bold text-5xl text-blackcolor
+}
+
+.style-guide-heading-subtitle{
+    @apply not-italic font-bold text-2xl text-gray-900
+}
+
+.style-guide-button{
+    @apply flex flex-col space-y-3
+}
+
+.button-style{
+    @apply flex flex-row justify-center items-center bg-darkGrey rounded-xl h-14 w-32
+}
+
+.button-style-width{
+    @apply flex flex-row justify-center items-center rounded-xl h-14 w-44 bg-lightGrey
+}
+
+.button-style--secondary-color{
+    @apply border border-secondColor bg-transparent text-blackcolor
+}
+
+.button-style-width--color{
+    @apply bg-darkGrey
+}
+
+/* Components page */
+
+.style-guide-buton-title--dark-color {
+    @apply text-blackcolor
+}
+
+.button-style-width--size{
+    @apply w-36 h-14
+}
+
+.logo-size{
+    @apply h-8 w-32
+}
+
+.footer-title{
+    @apply not-italic font-semibold text-lg leading-6 capitalize text-white
+}
+
+.footer-links{
+    @apply flex flex-col space-y-2
+}
+
+.link{
+    @apply not-italic font-normal text-base leading-6 text-white opacity-60
+}
+
+.footer-icon-opacity{
+    @apply opacity-50
+}
+
+.link--opacity{
+    @apply opacity-50
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,152 @@
     <link rel="stylesheet" href="/css/style.css">
     <title>Client First</title>
 </head>
-<body>
-    <h1 class="bg-red-800">It works</h1>
+
+<body class="font-Roboto not-italic">
+
+    <header>
+        <div class="flex justify-between items-center py-9 px-20 border-b">
+            <h4 class="style-guide-heading-subtitle">Style Guide</h4>
+            <img src="/img/Finsweet logo.svg" alt="">
+        </div>
+    </header>
+
+    <main>
+
+        <section>
+            <div class="flex justify-between items-center px-20 image">
+                <div class="style-guide-svg">
+                    <img src="/img/arrow.svg" alt="">
+                    <h4 class="style-guide-text">Download the Font family 👉</h4>
+                </div>
+                <div class="style-guide-svg">
+                    <img src="/img/Folder icon.svg" alt="">
+                    <h4 class="style-guide-text">Roboto Font Family</h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="style-guide">
+            <div class="flex flex-row items-stretch space-x-40">
+
+                <div class="flex flex-col space-y-12">
+                    <div class="heading-space">
+                        <h1 class="big-heading">Heading H1</h1>
+                        <h6 class="style-guide-subtitle">Roboto Bold
+                            Size 56px Line 110%</h6>
+                    </div>
+                    <div class="heading-space">
+                        <h2 class="font-bold text-5xl leading-5 text-gray-900">Heading H2</h2>
+                        <h6 class="style-guide-subtitle">Roboto Bold Size 48px Line 120%</h6>
+                    </div>
+                    <div class="heading-space">
+                        <h3 class="not-italic font-bold text-4xl leading-5 text-gray-900">Heading H3</h3>
+                        <h6 class="style-guide-subtitle">Roboto Bold Size 36px Line 120%</h6>
+                    </div>
+                    <div class="heading-space">
+                        <h4 class="font-bold text-2xl leading-5 text-gray-900">Heading H4</h4>
+                        <h6 class="style-guide-subtitle">Roboto Bold Size 24px Line 140%</h6>
+                    </div>
+                    <div class="heading-space">
+                        <h5 class="font-bold text-lg leading-6 text-gray-900">Heading H5</h5>
+                        <h6 class="style-guide-subtitle">Roboto Bold Size 18px Line 150%</h6>
+                    </div>
+                    <div class="heading-space">
+                        <h6 class="font-bold text-base leading-6 text-gray-900">Heading H6</h6>
+                        <h6 class="style-guide-subtitle">Roboto Bold Size 16px Line 150%</h6>
+                    </div>
+                </div>
+
+                <div class="flex flex-col space-y-12">
+
+                    <div class="style-guide-paragraph">
+                        <div class="style-guide-paragraph-content">
+                            <h5 class="style-guide-title">Paragraph</h5>
+                            <h6 class="style-guide-subtitle">Roboto Regular Size 16 px Line 150%</h6>
+                        </div>
+                        <div>
+                            <p class="not-italic font-normal text-base leading-6 text-gray-900">Lorem ipsum dolor sit
+                                amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt
+                                ut
+                                labore et dolore magna aliqua. Ut enim ad minim <br> veniam, quis nostrud exercitation.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="style-guide-paragraph">
+                        <div class="style-guide-paragraph-content">
+                            <h5 class="style-guide-title">Paragraph large</h5>
+                            <h6 class="style-guide-subtitle">Roboto Regular Size 18 px Line 150%</h6>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br> eiusmod tempor
+                                incididunt
+                                ut
+                                labore et dolore magna aliqua. Ut <br> enim ad minim veniam, quis nostrud exercitation.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="style-guide-paragraph">
+                        <div class="style-guide-paragraph-content">
+                            <h5 class="style-guide-title">Label</h5>
+                            <h6 class="style-guide-subtitle">Roboto Bold Size 24 px Line 120%</h6>
+                        </div>
+                        <div>
+                            <p class="not-italic font-bold text-2xl leading-5 label">Lorem ipsum dolor sit amet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="style-guide">
+            <div class="flex flex-col space-y-7">
+                <h4 class="style-guide-heading-subtitle">Color Palette</h4>
+                <div class="flex">
+                    <img src="/img/Primary.svg" alt="">
+                    <img src="/img/Blue.svg" alt="">
+                    <img src="/img/Light violet.svg" alt="">
+                    <img src="/img/Label gradient.svg" alt="">
+                    <img src="/img/Blue.svg" alt="">
+                    <img src="/img/White.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="style-guide flex flex-col space-y-7">
+            <h4 class="style-guide-heading-subtitle">Button</h4>
+            <div class="flex items-center space-x-20">
+                <div class="flex items-center space-x-12">
+                    <div class="style-guide-button">
+                        <p class="style-guide-buton-title">Normal</p>
+                        <button class="button-style style-guide-subtitle--button-text">Button</button>
+                    </div>
+                    <div class="style-guide-button">
+                        <p class="style-guide-buton-title">Hover</p>
+                        <button class="button-style-width style-guide-subtitle--button-text">Button Hover</button>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-12">
+                    <div class="style-guide-button">
+                        <p class="style-guide-buton-title">Normal</p>
+                        <button
+                            class="button-style button-style--secondary-color style-guide-subtitle--button-text">Button</button>
+                    </div>
+                    <div class="style-guide-button">
+                        <p class="style-guide-buton-title">Hover</p>
+                        <button
+                            class="button-style-width button-style-width--color style-guide-subtitle--button-text">Button
+                            Hover</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <p><a href="components.html">Components</a></p>
+        
+    </main>
+
 </body>
+
 </html>
