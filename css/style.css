@@ -12,17 +12,103 @@
         margin: 40px 70px;
         border-radius: 24px;
     }
-    .component-image{
+
+    .back-home {
+        width: 1280px;
+        height: 344px;
+    }
+
+    .back-home-pink {
+        width: 1280px;
+        height: 391px;
+        background: rgba(215, 152, 225, 0.15);
+    }
+
+    .component-image {
         background-image: url('/img/Blur\ Gradient.svg');
         background-size: cover;
         background-repeat: no-repeat;
-        background-position:top;
+        background-position: top;
         height: 95vh;
+    }
+
+
+    .home-image {
+        background-image: url('/img/homebrul.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        height: 200vh
+    }
+
+    .wid {
+        width: 576px;
+    }
+
+    .dashboard {
+        margin: 10px 70px;
+        width: 1000px;
+        height: 650px;
+    }
+
+    .blur-grad {
+        background-image: url('/img/Blur\ Gradient\ \(3\).svg');
+    }
+
+    .br {
+        width: 411px;
+        height: 404px;
+    }
+
+    .product-background-image {
+        background-image: url('/img/Blur\ Gradient\ \(1\).png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        height: 110vh;
+    }
+
+    .prod-company-image {
+        background: url('/img/Blur\ Gradient.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 110vh;
+    }
+
+    .backg-company {
+        width: 1300px;
+        height: 596px;
+        background: rgba(255, 255, 255, 0.69);
+        border-radius: 0px 67px 0px 0px;
+    }
+
+    .background-marketing {
+        background: url('/img/Blur\ Gradient\ \(2\).png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.68;
+    }
+    .generation-image{
+        background: url('/img/Blur\ Gradient\ \(3\).png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left;
+        height: 100vh;
     }
 }
 
-.style-guide{
+.style-guide {
     @apply m-20
+}
+
+.heading-two {
+    @apply font-bold text-5xl leading-tight text-gray-900
+}
+
+.heading-three {
+    @apply not-italic font-bold text-4xl leading-tight text-gray-900
 }
 
 .style-guide-svg {
@@ -37,19 +123,19 @@
     @apply not-italic font-bold text-base leading-6 text-gray-900 opacity-30
 }
 
-.style-guide-subtitle--button-text{
-    @apply  text-white
+.style-guide-subtitle--button-text {
+    @apply text-white
 }
 
-.style-guide-buton-title{
-    @apply not-italic text-base leading-6  font-normal text-theGray
+.style-guide-buton-title {
+    @apply not-italic text-base leading-6 font-normal text-theGray
 }
 
 .style-guide-paragraph {
     @apply flex flex-col space-y-4
 }
 
-.heading-space{
+.heading-space {
     @apply flex flex-col space-y-6
 }
 
@@ -63,71 +149,99 @@
 }
 
 .label {
+
     background: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+
+    @apply not-italic font-bold text-2xl
 }
 
-.big-heading{
-    @apply font-bold text-5xl text-blackcolor
+
+
+.big-heading {
+    @apply font-bold text-5xl text-blackcolor leading-tight
 }
 
-.style-guide-heading-subtitle{
+.paragraph {
+    @apply not-italic font-normal text-base text-gray-900 leading-normal
+}
+
+.style-guide-heading-subtitle {
     @apply not-italic font-bold text-2xl text-gray-900
 }
 
-.style-guide-button{
+.style-guide-button {
     @apply flex flex-col space-y-3
 }
 
-.button-style{
+.button-style {
     @apply flex flex-row justify-center items-center bg-darkGrey rounded-xl h-14 w-32
 }
 
-.button-style-width{
+.button-style-width {
     @apply flex flex-row justify-center items-center rounded-xl h-14 w-44 bg-lightGrey
 }
 
-.button-style--secondary-color{
+.button-style--secondary-color {
     @apply border border-secondColor bg-transparent text-blackcolor
 }
 
-.button-style-width--color{
+.button-style-width--color {
     @apply bg-darkGrey
 }
 
 /* Components page */
 
+.nav-link {
+    @apply style-guide-buton-title style-guide-buton-title--dark-color
+}
+
+.header-title {
+    @apply flex flex-col items-center text-center space-y-8
+}
+
+
+.links {
+    @apply flex items-center space-x-8
+}
+
 .style-guide-buton-title--dark-color {
     @apply text-blackcolor
 }
 
-.button-style-width--size{
+.button-style-width--size {
     @apply w-36 h-14
 }
 
-.logo-size{
+.logo-size {
     @apply h-8 w-32
 }
 
-.footer-title{
+.footer-title {
     @apply not-italic font-semibold text-lg leading-6 capitalize text-white
 }
 
-.footer-links{
+.footer-links {
     @apply flex flex-col space-y-2
 }
 
-.link{
+.link {
     @apply not-italic font-normal text-base leading-6 text-white opacity-60
 }
 
-.footer-icon-opacity{
+.footer-icon-opacity {
     @apply opacity-50
 }
 
-.link--opacity{
+.link--opacity {
     @apply opacity-50
+}
+
+/* Home page */
+
+.component-image--height {
+    height: 70vh;
 }
