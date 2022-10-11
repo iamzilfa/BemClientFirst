@@ -2,159 +2,219 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-    .image {
-        background-image: url('/img/Background.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 214px;
-        margin: 40px 70px;
-        border-radius: 24px;
-    }
 
-    .back-home {
-        width: 1280px;
-        height: 344px;
-    }
+@layer base {
+    body{
+        @apply font-Roboto
 
-    .back-home-pink {
-        width: 1280px;
-        height: 391px;
-        background: rgba(215, 152, 225, 0.15);
     }
-
-    .component-image {
-        background-image: url('/img/Blur\ Gradient.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: top;
-        height: 95vh;
-    }
-
-
-    .home-image {
-        background-image: url('/img/homebrul.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: top;
-        height: 200vh
-    }
-
-    .wid {
-        width: 576px;
-    }
-
-    .dashboard {
-        margin: 10px 70px;
-        width: 1000px;
-        height: 650px;
-    }
-
-    .blur-grad {
-        background-image: url('/img/Blur\ Gradient\ \(3\).svg');
-    }
-
-    .br {
-        width: 411px;
-        height: 404px;
-    }
-
-    .product-background-image {
-        background-image: url('/img/Blur\ Gradient\ \(1\).png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: right;
-        height: 110vh;
-    }
-
-    .prod-company-image {
-        background: url('/img/Blur\ Gradient.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 110vh;
-    }
-
-    .backg-company {
-        width: 1300px;
-        height: 596px;
-        background: rgba(255, 255, 255, 0.69);
-        border-radius: 0px 67px 0px 0px;
-    }
-
-    .background-marketing {
-        background: url('/img/Blur\ Gradient\ \(2\).png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        opacity: 0.68;
-    }
-
-    .generation-image {
-        background: url('/img/Blur\ Gradient\ \(3\).png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: left;
-        height: 100vh;
-    }
-
-    .aboutus-image {
-        background-image: url('/img/Blur\ Gradient\ \(4\).png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: top;
-        height: 230vh;
-    }
-
-    .pricing-background-image {
-        background-image: url('/img/homebrul.svg');
-    }
-
-    .backgroung-platinum {
-        background: linear-gradient(175.67deg, #D7E7F9 13.12%, #D5F4EC 96.48%);
-        border: 4px solid #6B7CFF;
-        border-radius: 24px;
-    }
-
-    .overr {
-        overflow: hidden;
-    }
-
-    .date {
-        @apply not-italic font-medium text-base leading-6 text-gray-900 opacity-60
-    }
-
-    .blog-background-img {
-        background-image: url('/img/Blur\ Gradient\ \(6\).png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: bottom;
-        height: 100vh;
-    }
-
-    .contact-background-image {
-        background-image: url('/img/Blur\ Gradient\ \(7\).png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: bottom;
-        height: 150vh;
-    }
-
-    .textarea {
-        width: 622px;
-    }
-
-    .input-width {
-        width: 303px;
-    }
-
-    .input-width--double-size {
-        width: 622px;
-    }
-    
-   
 }
+
+
+
+@layer components {
+
+/* Navbar page */
+
+.home-nav__header {
+    @apply flex flex-col space-y-20
+}
+
+.home-nav__content {
+    @apply flex justify-between items-center py-4 px-20
+}
+
+.home-nav__list {
+    @apply flex items-center space-x-8
+}
+
+.home-nav__item {
+    @apply style-guide-buton-title style-guide-buton-title--dark-color
+}
+
+.home-nav__button {
+    @apply flex flex-row justify-center items-center py-4 px-10 bg-gray-900 rounded-xl not-italic font-bold text-base leading-6 text-center text-white
+}
+
+/* Header  page*/
+
+.home-header {
+    @apply bg-cover bg-no-repeat bg-top bg-home-header
+}
+
+.home-header__content {
+    @apply flex flex-col items-center text-center space-y-12 my-24 mx-40
+}
+
+.home-header__heading-one {
+    @apply not-italic font-bold text-5xl leading-tight text-center text-gray-900
+}
+
+.home-header__paragraph {
+    @apply not-italic font-normal text-lg leading-snug text-center text-gray-900 opacity-80
+}
+
+.home-header__form{
+    @apply bg-white  flex justify-between rounded-3xl p-2
+}
+
+.home-header__input{
+    @apply rounded-xl pl-4 not-italic font-normal text-base leading-6 capitalize text-gray-900
+}
+
+.home-header__button {
+    @apply py-4 px-12 rounded-xl bg-[#1D2130] font-bold text-base leading-6 text-center text-white
+}
+
+/* Main page */
+
+
+
+
+.image {
+    background-image: url('/img/Background.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 214px;
+    margin: 40px 70px;
+    border-radius: 24px;
+}
+
+.back-home {
+    width: 1280px;
+    height: 344px;
+}
+
+.back-home-pink {
+    width: 1280px;
+    height: 391px;
+    background: rgba(215, 152, 225, 0.15);
+}
+
+.component-image {
+    background-image: url('/img/Blur\ Gradient.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 95vh;
+}
+
+.maine-nav__logo {
+    @apply h-8 w-32
+}
+
+
+
+
+.wid {
+    width: 576px;
+}
+
+
+.blur-grad {
+    background-image: url('/img/Blur\ Gradient\ \(3\).svg');
+}
+
+.br {
+    width: 411px;
+    height: 404px;
+}
+
+.product-background-image {
+    background-image: url('/img/Blur\ Gradient\ \(1\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 110vh;
+}
+
+.prod-company-image {
+    background: url('/img/Blur\ Gradient.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 110vh;
+}
+
+.backg-company {
+    width: 1300px;
+    height: 596px;
+    background: rgba(255, 255, 255, 0.69);
+    border-radius: 0px 67px 0px 0px;
+}
+
+.background-marketing {
+    background: url('/img/Blur\ Gradient\ \(2\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.68;
+}
+
+.generation-image {
+    background: url('/img/Blur\ Gradient\ \(3\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 100vh;
+}
+
+.aboutus-image {
+    background-image: url('/img/Blur\ Gradient\ \(4\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 230vh;
+}
+
+.pricing-background-image {
+    background-image: url('/img/homebrul.svg');
+}
+
+.backgroung-platinum {
+    background: linear-gradient(175.67deg, #D7E7F9 13.12%, #D5F4EC 96.48%);
+    border: 4px solid #6B7CFF;
+    border-radius: 24px;
+}
+
+.overr {
+    overflow: hidden;
+}
+
+.date {
+    @apply not-italic font-medium text-base leading-6 text-gray-900 opacity-60
+}
+
+.blog-background-img {
+    background-image: url('/img/Blur\ Gradient\ \(6\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100vh;
+}
+
+.contact-background-image {
+    background-image: url('/img/Blur\ Gradient\ \(7\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 150vh;
+}
+
+.textarea {
+    width: 622px;
+}
+
+.input-width {
+    width: 303px;
+}
+
+.input-width--double-size {
+    width: 622px;
+}
+
+
 
 .style-guide {
     @apply m-20
@@ -252,18 +312,7 @@
 
 /* Components page */
 
-.nav-link {
-    @apply style-guide-buton-title style-guide-buton-title--dark-color
-}
 
-.header-title {
-    @apply flex flex-col items-center text-center space-y-8
-}
-
-
-.links {
-    @apply flex items-center space-x-8
-}
 
 .style-guide-buton-title--dark-color {
     @apply text-blackcolor
@@ -273,9 +322,7 @@
     @apply w-36 h-14
 }
 
-.logo-size {
-    @apply h-8 w-32
-}
+
 
 .footer-title {
     @apply not-italic font-semibold text-lg leading-6 capitalize text-white
@@ -307,8 +354,9 @@
     @apply not-italic font-bold text-2xl leading-5 text-gray-900;
 }
 
-.active{
+.active {
     background: linear-gradient(175.67deg, #D7E7F9 13.12%, #D5F4EC 96.48%);
     @apply text-[#6B7CFF] px-6 py-2 rounded-3xl font-bold
-    
+}
+
 }

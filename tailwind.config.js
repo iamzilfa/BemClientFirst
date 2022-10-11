@@ -14,7 +14,11 @@ module.exports = {
         "darkGrey" : "#1D2130",
         "secondColor" : "#E0E4FC",
         "blackcolor" : " #1D2130"
+      },
+      backgroundImage : {
+        "home-header" : "url('/img/homebrul.svg')",
       }
+    
     },
   },
   plugins: [],

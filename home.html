@@ -11,111 +11,107 @@
 </head>
 
 <body>
-    <header class="home-image">
-        <div class="flex flex-col space-y-20">
-            <div class="flex justify-between items-center py-4 px-20">
-                <img class="logo-size" src="/img/Finsweet logo.svg" alt="">
-                <div>
-                    <ul class="links">
-                        <li class="nav-link active"><a href="home.html">Home</a>
-                        </li>
-                        <li class="nav-link"><a href="product.html">Product</a>
-                        </li>
-                        <li class="nav-link"><a href="pricing.html">Pricing</a>
-                        </li>
-                        <li class="nav-link"><a href="about-us.html">About Us</a>
-                        </li>
-                        <li class="nav-link"><a href="blog.html">Blog</a>
-                        </li>
-                        <li class="nav-link"><a href="contact.html">Contact</a>
-                        </li>
-                        <button
-                            class="button-style-width button-style-width--size button-style-width--color style-guide-subtitle--button-text">Free
-                            trial</button>
-                    </ul>
-                </div>
-            </div>
 
-            <div class="header-title">
-                <h1 class="big-heading">The Best Software to Grow <br> your Sales and Services</h1>
-                <p class="paragraph opacity-80">Lorem
-                    ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor <br> invidunt ut
-                    labore
-                    et dolore magna aliquyam erat.</p>
-                <form class="flex items-center">
-                    <input type="text"
-                        class="h-16 bg-white wid rounded-2xl not-italic font-normal text-base leading-6 capitalize text-gray-900 pl-5"
-                        placeholder="Enter your Email">
-                    <button
-                        class="w-40 h-12 bg-gray-900 rounded-xl not-italic font-bold text-base leading-6 text-center text-white -ml-40">Get
-                        Free trial</button>
-                </form>
-            </div>
-            <div class="flex justify-between items-center px-28">
-                <img class="dashboard" src="/img/Dashboard image.png" alt="">
-            </div>
+    <!-- Navbar -->
+
+    <nav class="home-nav">
+        <div class="home-nav__content">
+            <img class="home-nav__logo" src="/img/Finsweet logo.svg" alt="">
+            <ul class="home-nav__list">
+                <li class="home-nav__item active"><a href="home.html" class="home-nav__link">Home</a>
+                </li>
+                <li class="home-nav__item"><a href="product.html" class="home-nav__link">Product</a>
+                </li>
+                <li class="home-nav__item"><a href="pricing.html" class="home-nav__link">Pricing</a>
+                </li>
+                <li class="home-nav__item"><a href="about-us.html" class="home-nav__link">About Us</a>
+                </li>
+                <li class="home-nav__item"><a href="blog.html" class="home-nav__link">Blog</a>
+                </li>
+                <li class="home-nav__item"><a href="contact.html" class="home-nav__link">Contact</a>
+                </li>
+                <button class="home-nav__button">Free
+                    trial
+                </button>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="home-header">
+        <div class="home-header__content">
+            <h1 class="home-header__heading-one">The Best Software to
+                Grow <br> your Sales and Services</h1>
+            <p class="home-header__paragraph">Lorem
+                ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor <br> invidunt
+                ut
+                labore
+                et dolore magna aliquyam erat.</p>
+            <form class="home-header__form">
+                <input class="home-header__input"
+                    placeholder="Enter your Email">
+                <button
+                    class="home-header__button">Get
+                    Free trial</button>
+            </form>
+            <img class="home-header__image" src="/img/Dashboard image.png" alt="">
         </div>
     </header>
 
-    <main>
-        <section class="px-20">
-            <div class="flex flex-col items-center space-y-10">
-                <div class="flex flex-col items-center space-y-7">
-                    <label class="label">High-quality</label>
-                    <h2 class="heading-two text-center">We have the Best Solution
-                        <br> for your Business
-                    </h2>
+    <main class="home-main">
+        <section class="flex flex-col items-center space-y-10 px-20">
+            <div class="flex flex-col items-center space-y-7">
+                <label class="label">High-quality</label>
+                <h2 class="heading-two text-center">We have the Best Solution
+                    <br> for your Business
+                </h2>
+            </div>
+            <div class="flex justify-between items-center bg-gray-300 rounded-3xl back-home px-10 space-x-6">
+                <div class="flex flex-col space-y-5">
+                    <img src="/img/Icon 1.svg" class="w-8 h-12" alt="">
+                    <h4 class="not-italic font-bold text-3xl text-gray-900">High security to protect <br> from
+                        piracy</h4>
+                    <p class="not-italic font-normal text-base leading-6 text-gray-900 opacity-80">Lorem ipsum dolor
+                        sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
                 </div>
-                <div class="flex justify-between items-center bg-gray-300 rounded-3xl back-home px-10 space-x-6">
-                    <div class="flex flex-col space-y-5">
-                        <img src="/img/Icon 1.svg" class="w-8 h-12" alt="">
-                        <h4 class="not-italic font-bold text-3xl text-gray-900">High security to protect <br> from
-                            piracy</h4>
-                        <p class="not-italic font-normal text-base leading-6 text-gray-900 opacity-80">Lorem ipsum dolor
-                            sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
-                    </div>
-                    <div class="flex flex-col space-y-5">
-                        <img src="/img/Icon 2.svg" class="w-8 h-12" alt="">
-                        <h4 class="not-italic font-bold text-3xl text-gray-900">Premium quality performance</h4>
-                        <p class="not-italic font-normal text-base leading-6 text-gray-900 opacity-80">Lorem ipsum dolor
-                            sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
-                    </div>
-                    <div class="flex flex-col space-y-5">
-                        <img src="/img/Icon 3.svg" class="w-8 h-12" alt="">
-                        <h4 class="not-italic font-bold text-3xl text-gray-900">Full time customer support - 24/7</h4>
-                        <p class="not-italic font-normal text-base leading-6 text-gray-900 opacity-80">Lorem ipsum dolor
-                            sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
-                    </div>
+                <div class="flex flex-col space-y-5">
+                    <img src="/img/Icon 2.svg" class="w-8 h-12" alt="">
+                    <h4 class="not-italic font-bold text-3xl text-gray-900">Premium quality performance</h4>
+                    <p class="not-italic font-normal text-base leading-6 text-gray-900 opacity-80">Lorem ipsum dolor
+                        sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+                </div>
+                <div class="flex flex-col space-y-5">
+                    <img src="/img/Icon 3.svg" class="w-8 h-12" alt="">
+                    <h4 class="not-italic font-bold text-3xl text-gray-900">Full time customer support - 24/7</h4>
+                    <p class="not-italic font-normal text-base leading-6 text-gray-900 opacity-80">Lorem ipsum dolor
+                        sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
                 </div>
             </div>
         </section>
 
-        <section class="px-20">
-            <div class="flex items-stretch space-x-12 pt-28">
-                <div class="flex flex-col space-y-4">
-                    <p class="label">Why should you work with us?</p>
-                    <h2 class="heading-two">To upscale your business <br> to the next level</h2>
-                    <p class="paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy <br>
-                        eirmod tempor invidunt
-                        ut labore et dolore magna aliquyam erat, sed diam <br> voluptua invidunt ut labore.</p>
-                </div>
+        <section class="flex items-stretch space-x-12 pt-28 px-20">
+            <div class="flex flex-col space-y-4">
+                <p class="label">Why should you work with us?</p>
+                <h2 class="heading-two">To upscale your business <br> to the next level</h2>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy <br>
+                    eirmod tempor invidunt
+                    ut labore et dolore magna aliquyam erat, sed diam <br> voluptua invidunt ut labore.</p>
+            </div>
 
-                <div class="flex flex-col space-y-10 ">
-                    <div class="flex items-center space-x-4">
-                        <img src="/img/Icon.svg" alt="">
-                        <p class="not-italic font-medium text-xl leading-6 text-gray-900">Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, <br> sed do eiusmod.</p>
-                    </div>
-                    <div class="flex items-center space-x-4">
-                        <img src="/img/Icon.svg" alt="">
-                        <p class="not-italic font-medium text-xl leading-6 text-gray-900">Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, <br> sed do eiusmod.</p>
-                    </div>
-                    <div class="flex items-center space-x-4">
-                        <img src="/img/Icon.svg" alt="">
-                        <p class="not-italic font-medium text-xl leading-6 text-gray-900">Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, <br> sed do eiusmod.</p>
-                    </div>
+            <div class="flex flex-col space-y-10 ">
+                <div class="flex items-center space-x-4">
+                    <img src="/img/Icon.svg" alt="">
+                    <p class="not-italic font-medium text-xl leading-6 text-gray-900">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, <br> sed do eiusmod.</p>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <img src="/img/Icon.svg" alt="">
+                    <p class="not-italic font-medium text-xl leading-6 text-gray-900">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, <br> sed do eiusmod.</p>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <img src="/img/Icon.svg" alt="">
+                    <p class="not-italic font-medium text-xl leading-6 text-gray-900">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, <br> sed do eiusmod.</p>
                 </div>
             </div>
         </section>
@@ -310,7 +306,7 @@
                 <div class="flex flex-col space-y-5">
                     <img class="logo-size" src="/img/Finsweet white logo.svg" alt="">
                     <p class="footer-title">Subscribe to our Newsletter</p>
-                    
+
                     <form>
                         <input type="text" class=" px-5 py-4 rounded-lg bg-gray-800 link link--opacity -mr-20 flex-1"
                             placeholder="Enter your Email">
