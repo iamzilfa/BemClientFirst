@@ -1,0 +1,727 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    body{
+        @apply font-Roboto
+
+    }
+}
+
+
+@layer components {
+
+/* Navbar page */
+
+.nav__header {
+    @apply flex flex-col space-y-20
+}
+
+.nav__content {
+    @apply flex justify-between items-center py-4 px-20
+}
+
+.nav__logo, .footer__logo {
+    @apply w-32 h-8
+}
+
+.nav__list {
+    @apply flex items-center space-x-8
+}
+
+.nav__item {
+    @apply style-guide-buton-title style-guide-buton-title--dark-color
+}
+
+.nav__item--active{
+    background: linear-gradient(175.67deg, #D7E7F9 13.12%, #D5F4EC 96.48%);
+    @apply text-[#6B7CFF] px-6 py-2 rounded-3xl font-bold
+}
+
+.nav__button {
+    @apply flex flex-row justify-center items-center py-4 px-10 bg-gray-900 rounded-xl not-italic font-bold text-base leading-6 text-center text-white
+}
+
+/* Header  page*/
+
+.home-header {
+    @apply bg-cover bg-no-repeat bg-top bg-home-header
+}
+
+.home-header__content {
+    @apply flex flex-col items-center text-center space-y-12 my-24 mx-40
+}
+
+.home-header__title, .home-quality__title {
+    @apply not-italic font-bold text-5xl leading-tight text-center text-gray-900
+}
+
+.home-header__paragraph {
+    @apply not-italic font-normal text-lg leading-snug text-center text-gray-900 opacity-80
+}
+
+.home-header__form{
+    @apply bg-white flex justify-between rounded-3xl p-2
+}
+
+.home-header__input{
+    @apply rounded-xl pl-4 not-italic font-normal text-base leading-6 capitalize text-gray-900
+}
+
+.home-header__button {
+    @apply py-4 px-12 rounded-xl bg-darkGrey font-bold text-base leading-6 text-center text-white
+}
+
+/* Main page */
+
+.home-quality{
+    @apply flex flex-col items-center space-y-10 
+}
+
+.home-quality__content{
+    @apply flex flex-col items-center space-y-7
+}
+
+.home-quality__label, .home-discover__label, .home-why-us__label{
+    background: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
+    @apply not-italic font-bold text-2xl bg-clip-text text-transparent
+}
+
+.home-discover__title{
+    @apply font-bold text-5xl leading-tight text-gray-900
+}
+
+.home-discover__paragraph{
+    @apply not-italic font-normal text-base text-gray-900 leading-normal
+}
+
+.home-discover__list{
+    @apply flex flex-col space-y-7
+}
+
+.home-discover__item{
+    @apply flex items-center space-x-8
+}
+
+.home-discover__item-description{
+    @apply flex flex-col space-y-3
+}
+
+.home-discover__item-title{
+    @apply not-italic font-bold text-2xl text-gray-900
+}
+
+.home-discover__item-description{
+    @apply not-italic font-normal text-lg leading-6 text-gray-900
+}
+
+.home-why-us{
+    @apply flex items-stretch space-x-12 pt-28 px-20
+}
+
+.home-why-us__content{
+    @apply flex flex-col space-y-4
+}
+
+.home-why-us__title{
+    @apply font-bold text-5xl leading-tight text-gray-900
+}
+
+.home-why-us__description{
+    @apply not-italic font-normal text-base text-gray-900 leading-normal
+}
+
+.home-why-us__list{
+    @apply flex flex-col space-y-10
+}
+
+.home-why-us__list-item{
+    @apply flex items-center space-x-4
+}
+
+.home-why-us__list-description{
+    @apply not-italic font-medium text-xl leading-6 text-darkGrey
+}
+
+.home-conversions{
+    @apply bg-conversions-background-image
+}
+
+.home-conversions__content{
+    @apply flex items-center p-20 mt-20
+}
+
+.home-conversions__content-text{
+    @apply flex flex-col space-y-6
+}
+
+.home-conversions__content-title{
+    @apply font-bold text-5xl leading-tight text-gray-900
+}
+
+.home-conversions__content-paragraph{
+    @apply not-italic font-normal text-base text-gray-900 leading-normal
+}
+
+.home-conversions__content-button{
+    @apply w-40 h-12 bg-gray-900 rounded-xl not-italic font-bold text-base leading-6 text-center text-white
+}
+
+
+.home-quality__list{
+    @apply flex justify-between items-center bg-gray-300 rounded-3xl back-home px-10 space-x-6
+}
+
+.home-quality__list-item{
+    @apply flex flex-col space-y-5
+}
+
+.home-quality__icon{
+    @apply w-8 h-12
+}
+
+.home-quality__item-subtitle{
+    @apply not-italic font-bold text-3xl text-gray-900
+}
+
+.home-quality__item-paragraph{
+    @apply not-italic font-normal text-base leading-6 text-gray-900 opacity-80
+}
+
+
+.label {
+    background: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
+    @apply not-italic font-bold text-2xl bg-clip-text text-transparent
+}
+
+
+.home-logos{
+    @apply flex justify-between items-center p-20
+}
+
+.home-discover{
+    @apply flex justify-between items-center m-20
+}
+
+.home-discover__description{
+    @apply flex flex-col space-y-8
+}
+
+
+
+.home-feature{
+    @apply flex flex-col justify-between items-center space-y-14
+}
+
+.home-feature__list{
+    @apply flex justify-between items-center rounded-3xl back-home-pink px-10 space-x-3
+}
+
+.home-feature__list-item{
+    @apply flex flex-col space-y-5
+}
+
+.home-feature__list-item-icon{
+    @apply w-10 h-10
+}
+
+.home-feature__list-item-title{
+    @apply not-italic font-bold text-4xl leading-tight text-gray-900
+}
+
+.home-feature__list-item-paragraph{
+    @apply not-italic font-normal text-base leading-6 text-gray-900 opacity-80
+}
+
+.home-feature__title{
+    @apply font-bold text-5xl leading-tight text-gray-900
+}
+
+
+.home-testimonial{
+    @apply flex flex-col justify-between items-center space-y-20 m-20
+}
+
+.home-testimonial__title{
+    @apply font-bold text-5xl leading-tight text-gray-900
+}
+
+.home-testimonial__card{
+    @apply flex items-stretch space-x-5
+}
+
+.home-testimonial__card-item{
+    @apply flex flex-col items-center pt-16 space-y-6  border-2 rounded-3xl br
+}
+
+.home-testimonial__card-text{
+    @apply not-italic font-semibold text-lg leading-6 text-center text-gray-900
+}
+
+.home-testimonial__profile{
+    @apply flex flex-col items-center space-y-1
+}
+
+.home-testimonial__profile-name{
+    @apply not-italic font-medium text-xl leading-6 text-center text-gray-900
+}
+
+.home-testimonial__profile-professional{
+    @apply not-italic font-normal text-xs leading-4 text-center text-gray-900
+}
+
+
+.contact {
+    height: 170vh;
+    @apply bg-bottom bg-no-repeat bg-cover bg-contact-background-image
+}
+
+.contact__content{
+    @apply mx-20 pt-20 flex flex-col space-y-20
+}
+
+.contact__title{
+    @apply not-italic font-bold text-5xl leading-4 text-center text-gray-900
+}
+
+.contact__form{
+    @apply flex flex-col bg-[#F0F2FE] rounded-3xl p-20 space-y-10
+}
+
+.contact__form-description{
+    @apply space-y-6
+}
+
+.contact__form-fields {
+    @apply flex flex-col space-y-4
+}
+
+.contact__form-text-field {
+    @apply h-16 pl-4 input-width bg-white not-italic font-normal rounded-lg text-base leading-6 text-gray-900 opacity-80
+}
+
+.contact__form-text-field--width-doubled {
+    width: 38.875rem;
+}
+
+.contact__form-text-field--width-height-doubled{
+    width: 38.875rem;
+    @apply h-40
+}
+
+.contact__form-title{
+    @apply not-italic font-bold text-4xl leading-5 text-gray-900
+}
+
+.contact__message{
+@apply not-italic font-normal text-lg leading-6 text-gray-900
+}
+
+.contact__details {
+    @apply flex flex-col space-y-14
+}
+
+.contact__item{
+    @apply flex items-center space-x-8
+}
+
+.contact__address{
+    @apply space-y-2
+}
+
+.contact__communication{
+    @apply not-italic font-bold text-2xl leading-5 text-gray-900
+}
+
+.contact__description{
+    @apply not-italic font-normal text-base leading-6 text-gray-900 opacity-60
+}
+
+.contact__form-button{
+    @apply px-2 py-4 rounded-xl items-center bg-gray-900 not-italic font-bold text-base text-center text-white
+}
+
+.contact__names-field{
+    @apply space-x-3
+}
+
+.contact__form-sections{
+    @apply flex justify-between
+}
+
+.pricing{
+    height: 70vh;
+    @apply bg-pricing-background-image bg-cover bg-no-repeat bg-top 
+}
+
+.pricing__content{
+    @apply flex flex-col items-center text-center space-y-8
+}
+
+.pricing__title{
+    @apply font-bold text-5xl text-blackcolor leading-tight
+}
+
+.pricing__paragraph{
+    @apply not-italic font-normal text-base leading-6 text-center text-gray-900
+}
+
+.pricing__button{
+    @apply button-style-width button-style-width--size button-style-width--color style-guide-subtitle--button-text
+}
+
+
+
+
+.footer{
+    @apply bg-blackcolor
+}
+
+
+.footer__list{
+    @apply grid grid-flow-col px-20 gap-10 pt-14 text-white
+}
+
+.footer__list-item{
+    @apply flex flex-col space-y-5
+}
+
+.footer__list-title{
+    @apply not-italic font-semibold text-lg leading-6 capitalize text-white
+}
+
+.footer__links{
+    @apply flex flex-col space-y-3
+}
+
+.footer__item{
+    @apply not-italic font-normal text-base leading-6 text-white opacity-60
+}
+
+.footer__list-item-logo{
+    @apply flex flex-col space-y-8
+}
+
+.footer__subscribe{
+    @apply space-y-2
+}
+
+.footer__newsletter{
+    @apply not-italic font-semibold text-lg leading-6 text-white
+}
+
+.footer__form{
+    @apply bg-blackRock flex justify-between rounded-3xl  
+}
+
+.footer__input{
+    @apply rounded-xl pl-4 not-italic font-normal text-base leading-6 capitalize text-gray-900 bg-blackRock 
+}
+
+.footer__button{
+    @apply py-4 px-12 rounded-xl font-bold text-base leading-6 text-center text-darkGrey bg-white
+}
+
+.footer__bottom-row{
+    @apply flex py-10 px-20 items-center
+}
+
+.footer__copyright{
+    @apply not-italic font-normal text-xs leading-4 text-white opacity-50
+}
+
+.footer__border-left, .footer__border-right{
+    @apply flex-grow border-t border-gray-400
+}
+
+.footer__icon {
+    @apply opacity-50
+}
+
+.footer__icon-space-between {
+    @apply flex space-x-4
+}
+
+.footer__border-icon-distance{
+    @apply flex-shrink mx-5
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image {
+    background-image: url('/img/Background.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 214px;
+    margin: 40px 70px;
+    border-radius: 24px;
+}
+
+.back-home {
+    width: 1280px;
+    height: 344px;
+}
+
+.back-home-pink {
+    width: 1280px;
+    height: 391px;
+    background: rgba(215, 152, 225, 0.15);
+}
+
+.component-image {
+    background-image: url('/img/Blur\ Gradient.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 95vh;
+}
+
+
+.wid {
+    width: 576px;
+}
+
+
+.home-conversions {
+    background-image: url('/img/Blur\ Gradient\ \(3\).svg');
+}
+
+.br {
+    width: 411px;
+    height: 404px;
+}
+
+.product-background-image {
+    background-image: url('/img/Blur\ Gradient\ \(1\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 110vh;
+}
+
+.prod-company-image {
+    background: url('/img/Blur\ Gradient.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 110vh;
+}
+
+.backg-company {
+    width: 1300px;
+    height: 596px;
+    background: rgba(255, 255, 255, 0.69);
+    border-radius: 0px 67px 0px 0px;
+}
+
+.background-marketing {
+    background: url('/img/Blur\ Gradient\ \(2\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.68;
+}
+
+.generation-image {
+    background: url('/img/Blur\ Gradient\ \(3\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 100vh;
+}
+
+.aboutus-image {
+    background-image: url('/img/Blur\ Gradient\ \(4\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 230vh;
+}
+
+.pricing-background-image {
+    background-image: url('/img/homebrul.svg');
+}
+
+.backgroung-platinum {
+    background: linear-gradient(175.67deg, #D7E7F9 13.12%, #D5F4EC 96.48%);
+    border: 4px solid #6B7CFF;
+    border-radius: 24px;
+}
+
+.overr {
+    overflow: hidden;
+}
+
+.date {
+    @apply not-italic font-medium text-base leading-6 text-gray-900 opacity-60
+}
+
+.blog-background-img {
+    background-image: url('/img/Blur\ Gradient\ \(6\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100vh;
+}
+
+
+.textarea {
+    width: 622px;
+}
+
+.input-width {
+    width: 303px;
+}
+
+
+
+
+
+.style-guide {
+    @apply m-20
+}
+
+.heading-two {
+    @apply font-bold text-5xl leading-tight text-gray-900
+}
+
+.heading-three {
+    @apply not-italic font-bold text-4xl leading-tight text-gray-900
+}
+
+.style-guide-svg {
+    @apply flex items-center space-x-6
+}
+
+.style-guide-text {
+    @apply not-italic font-bold text-2xl text-gray-900
+}
+
+.style-guide-subtitle {
+    @apply not-italic font-bold text-base leading-6 text-gray-900 opacity-30
+}
+
+.style-guide-subtitle--button-text {
+    @apply text-white
+}
+
+.style-guide-buton-title {
+    @apply not-italic text-base leading-6 font-normal text-theGray
+}
+
+.style-guide-paragraph {
+    @apply flex flex-col space-y-4
+}
+
+.heading-space {
+    @apply flex flex-col space-y-6
+}
+
+.style-guide-paragraph-content {
+    @apply flex items-center space-x-5
+}
+
+
+.style-guide-title {
+    @apply not-italic font-bold text-lg leading-6 text-gray-900 opacity-80
+}
+
+
+
+
+.big-heading {
+    @apply font-bold text-5xl text-blackcolor leading-tight
+}
+
+.paragraph {
+    @apply not-italic font-normal text-base text-gray-900 leading-normal
+}
+
+.style-guide-heading-subtitle {
+    @apply not-italic font-bold text-2xl text-gray-900
+}
+
+.style-guide-button {
+    @apply flex flex-col space-y-3
+}
+
+.button-style {
+    @apply flex flex-row justify-center items-center bg-darkGrey rounded-xl h-14 w-32
+}
+
+.button-style-width {
+    @apply flex flex-row justify-center items-center rounded-xl h-14 w-44 bg-lightGrey
+}
+
+.button-style--secondary-color {
+    @apply border border-secondColor bg-transparent text-blackcolor
+}
+
+.button-style-width--color {
+    @apply bg-darkGrey
+}
+
+/* Components page */
+
+
+
+.style-guide-buton-title--dark-color {
+    @apply text-blackcolor
+}
+
+.button-style-width--size {
+    @apply w-36 h-14
+}
+
+
+
+.footer-title {
+    @apply not-italic font-semibold text-lg leading-6 text-white
+}
+
+.footer-links {
+    @apply flex flex-col space-y-2
+}
+
+.link {
+    @apply not-italic font-normal text-base leading-6 text-white opacity-60
+}
+
+.footer-icon-opacity {
+    @apply opacity-50
+}
+
+.link--opacity {
+    @apply opacity-50
+}
+
+/* Home page */
+
+
+
+.heading-four {
+    @apply not-italic font-bold text-2xl leading-5 text-gray-900;
+}
+
+
+
+}

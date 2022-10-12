@@ -1,0 +1,24 @@
+{
+  "name": "bemclientfirst",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npx tailwindcss -i ./css/style.css -o ./css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamzilfa/BemClientFirst.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamzilfa/BemClientFirst/issues"
+  },
+  "homepage": "https://github.com/iamzilfa/BemClientFirst#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}
