@@ -897,29 +897,29 @@ body {
   color: rgb(29 33 48 / var(--tw-text-opacity));
 }
 
-.home__conversions {
+.home-conversions {
   background-image: url('/img/Blur Gradient (3).svg');
 }
 
-.home__conversions-content {
+.home-conversions__content {
   margin-top: 5rem;
   display: flex;
   align-items: center;
   padding: 5rem;
 }
 
-.home__conversions-content-text {
+.home-conversions__content-text {
   display: flex;
   flex-direction: column;
 }
 
-.home__conversions-content-text > :not([hidden]) ~ :not([hidden]) {
+.home-conversions__content-text > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
-.home__conversions-content-title {
+.home-conversions__content-title {
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.25;
@@ -927,7 +927,7 @@ body {
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
-.home__conversions-content-paragraph {
+.home-conversions__content-paragraph {
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 400;
@@ -937,7 +937,7 @@ body {
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
-.home__conversions-content-button {
+.home-conversions__content-button {
   height: 3rem;
   width: 10rem;
   border-radius: 0.75rem;
@@ -974,17 +974,6 @@ body {
   padding-right: 2.5rem;
 }
 
-.home-quality__list-item {
-  display: flex;
-  flex-direction: column;
-}
-
-.home-quality__list-item > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
-}
-
 .home-quality__item-subtitle {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1015,7 +1004,7 @@ body {
   color: transparent
 }
 
-.home__different-logos {
+.home-logos {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1403,7 +1392,7 @@ body {
   justify-content: space-between;
 }
 
-.component{
+.pricing{
   height: 70vh;
   background-image: url('/img/Blur Gradient.svg');
   background-size: cover;
@@ -1411,23 +1400,23 @@ body {
   background-repeat: no-repeat
 }
 
-.component__content {
+.pricing__content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.component__content > :not([hidden]) ~ :not([hidden]) {
+.pricing__content > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
-.component__content {
+.pricing__content {
   text-align: center;
 }
 
-.component__title {
+.pricing__title {
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.25;
@@ -1435,7 +1424,7 @@ body {
   color: rgb(29 33 48 / var(--tw-text-opacity));
 }
 
-.component__paragraph {
+.pricing__paragraph {
   text-align: center;
   font-size: 1rem;
   font-weight: 400;
@@ -1445,7 +1434,7 @@ body {
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
-.component__button {
+.pricing__button {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   display: flex;
@@ -1465,7 +1454,7 @@ body {
   background-color: rgb(29 33 48 / var(--tw-bg-opacity));
 }
 
-.footer__cols {
+.footer__list {
   display: grid;
   grid-auto-flow: column;
   gap: 2.5rem;
@@ -1476,18 +1465,18 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.footer__column {
+.footer__list-item {
   display: flex;
   flex-direction: column;
 }
 
-.footer__column > :not([hidden]) ~ :not([hidden]) {
+.footer__list-item > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
-.footer__title {
+.footer__list-title {
   font-size: 1.125rem;
   font-weight: 600;
   text-transform: capitalize;
@@ -1518,12 +1507,12 @@ body {
   opacity: 0.6;
 }
 
-.footer__column-logo {
+.footer__list-item-logo {
   display: flex;
   flex-direction: column;
 }
 
-.footer__column-logo > :not([hidden]) ~ :not([hidden]) {
+.footer__list-item-logo > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
@@ -1608,7 +1597,7 @@ body {
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
-.footer__icon-opacity {
+.footer__icon {
   opacity: 0.5;
 }
 
@@ -1652,7 +1641,7 @@ body {
   height: 95vh;
 }
 
-.home__conversions {
+.home-conversions {
   background-image: url('/img/Blur\ Gradient\ \(3\).svg');
 }
 

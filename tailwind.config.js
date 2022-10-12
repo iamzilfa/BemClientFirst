@@ -19,7 +19,7 @@ module.exports = {
       backgroundImage : {
         "home-header" : "url('/img/homebrul.svg')",
         "contact-background-image" : "url('/img/Blur\ Gradient\ \(7\).png')",
-        "component-background-image": "url('/img/Blur\ Gradient.svg')",
+        "pricing-background-image": "url('/img/Blur\ Gradient.svg')",
         "conversions-background-image": "url('/img/Blur\ Gradient\ \(3\).svg')"
       }
     

@@ -145,27 +145,27 @@
     @apply not-italic font-medium text-xl leading-6 text-darkGrey
 }
 
-.home__conversions{
+.home-conversions{
     @apply bg-conversions-background-image
 }
 
-.home__conversions-content{
+.home-conversions__content{
     @apply flex items-center p-20 mt-20
 }
 
-.home__conversions-content-text{
+.home-conversions__content-text{
     @apply flex flex-col space-y-6
 }
 
-.home__conversions-content-title{
+.home-conversions__content-title{
     @apply font-bold text-5xl leading-tight text-gray-900
 }
 
-.home__conversions-content-paragraph{
+.home-conversions__content-paragraph{
     @apply not-italic font-normal text-base text-gray-900 leading-normal
 }
 
-.home__conversions-content-button{
+.home-conversions__content-button{
     @apply w-40 h-12 bg-gray-900 rounded-xl not-italic font-bold text-base leading-6 text-center text-white
 }
 
@@ -197,7 +197,7 @@
 }
 
 
-.home__different-logos{
+.home-logos{
     @apply flex justify-between items-center p-20
 }
 
@@ -351,24 +351,24 @@
     @apply flex justify-between
 }
 
-.component{
+.pricing{
     height: 70vh;
-    @apply bg-component-background-image bg-cover bg-no-repeat bg-top 
+    @apply bg-pricing-background-image bg-cover bg-no-repeat bg-top 
 }
 
-.component__content{
+.pricing__content{
     @apply flex flex-col items-center text-center space-y-8
 }
 
-.component__title{
+.pricing__title{
     @apply font-bold text-5xl text-blackcolor leading-tight
 }
 
-.component__paragraph{
+.pricing__paragraph{
     @apply not-italic font-normal text-base leading-6 text-center text-gray-900
 }
 
-.component__button{
+.pricing__button{
     @apply button-style-width button-style-width--size button-style-width--color style-guide-subtitle--button-text
 }
 
@@ -380,15 +380,15 @@
 }
 
 
-.footer__cols{
+.footer__list{
     @apply grid grid-flow-col px-20 gap-10 pt-14 text-white
 }
 
-.footer__column{
+.footer__list-item{
     @apply flex flex-col space-y-5
 }
 
-.footer__title{
+.footer__list-title{
     @apply not-italic font-semibold text-lg leading-6 capitalize text-white
 }
 
@@ -400,7 +400,7 @@
     @apply not-italic font-normal text-base leading-6 text-white opacity-60
 }
 
-.footer__column-logo{
+.footer__list-item-logo{
     @apply flex flex-col space-y-8
 }
 
@@ -436,7 +436,7 @@
     @apply flex-grow border-t border-gray-400
 }
 
-.footer__icon-opacity {
+.footer__icon {
     @apply opacity-50
 }
 
@@ -501,7 +501,7 @@
 }
 
 
-.home__conversions {
+.home-conversions {
     background-image: url('/img/Blur\ Gradient\ \(3\).svg');
 }
 
