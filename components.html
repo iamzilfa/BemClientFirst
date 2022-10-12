@@ -11,100 +11,103 @@
 </head>
 
 <body class="font-Roboto">
-    <header class="component-image">
-        <div>
-            <div class="flex justify-between items-center py-4 px-20">
-                <img class="logo-size" src="/img/Finsweet logo.svg" alt="">
-                <div>
-                    <ul class="links">
-                        <li class="nav-link"><a href="home.html">Home</a>
-                        </li>
-                        <li class="nav-link"><a href="product.html">Product</a>
-                        </li>
-                        <li class="nav-link"><a href="pricing.html">Pricing</a>
-                        </li>
-                        <li class="nav-link"><a href="about-us.html">About Us</a>
-                        </li>
-                        <li class="nav-link"><a href="blog.html">Blog</a>
-                        </li>
-                        <li class="nav-link"><a href="contact.html">Contact</a>
-                        </li>
-                        <button
-                            class="button-style-width button-style-width--size button-style-width--color style-guide-subtitle--button-text">Free
-                            trial</button>
-                    </ul>
-                </div>
-            </div>
+
+    <!-- Navbar -->
+    <nav class="nav">
+        <div class="nav__content">
+            <img class="nav__logo" src="/img/Finsweet logo.svg" alt="">
+            <ul class="nav__list">
+                <li class="nav__item active"><a href="index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item"><a href="product.html" class="nav__link">Product</a>
+                </li>
+                <li class="nav__item"><a href="pricing.html" class="nav__link">Pricing</a>
+                </li>
+                <li class="nav__item"><a href="about-us.html" class="nav__link">About Us</a>
+                </li>
+                <li class="nav__item"><a href="blog.html" class="nav__link">Blog</a>
+                </li>
+                <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a>
+                </li>
+                <button class="nav__button">Free
+                    trial
+                </button>
+            </ul>
         </div>
-        <div>
-            <div class="flex flex-col items-center text-center space-y-8 my-32">
-                <h1 class="big-heading">Are you ready to grow your <br> business with us?</h1>
-                <p class="heading-text">Lorem ipsum dolor sit
+    </nav>
+
+    <main class="mt-28">
+
+     <section class="main-component">
+            <div class="main-component__content">
+                <h1 class="main-component__title">Are you ready to grow your <br> business with us?</h1>
+                <p class="main-component__paragraph">Lorem ipsum dolor sit
                     amet, consetetur
                     sadipscing elitr, sed diam nonumy.</p>
-                <button
-                    class="button-style-width button-style-width--size button-style-width--color style-guide-subtitle--button-text">View
+                <button class="main-component__button">View
                     Pricing</button>
             </div>
-        </div>
-    </header>
+        </section>
 
-    <footer class="bg-blackcolor">
-        <div class="pl-20 pt-14 text-white">
-            <div class="grid grid-flow-col">
-                <div class="flex flex-col space-y-5">
-                    <p class="footer-title">Company</p>
-                    <ul class="footer-links">
-                        <li class="link"><a href="#">About Us</a></li>
-                        <li class="link"><a href="#">Why Choose us</a></li>
-                        <li class="link"><a href="#">Pricing</a></li>
-                        <li class="link"><a href="#">Testimonial</a></li>
-                    </ul>
-                </div>
-                <div class="flex flex-col space-y-5">
-                    <p class="footer-title">Resources</p>
-                    <ul class="footer-links">
-                        <li class="link"><a href="#">Privacy Policy</a></li>
-                        <li class="link"><a href="#">Terms and Condition</a></li>
-                        <li class="link"><a href="#">Blog</a></li>
-                        <li class="link"><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="flex flex-col space-y-5">
-                    <p class="footer-title">Product</p>
-                    <ul class="footer-links">
-                        <li class="link"><a href="#">Project managment</a></li>
-                        <li class="link"><a href="#">Time tracker</a></li>
-                        <li class="link"><a href="#">Time schedule</a></li>
-                        <li class="link"><a href="#">Lead generate</a></li>
-                        <li class="link"><a href="#">Remote Collaboration</a></li>
-                    </ul>
-                </div>
-                <div class="flex flex-col space-y-5">
-                    <img class="logo-size" src="/img/Finsweet white logo.svg" alt="">
-                    <p class="footer-title">Subscribe to our Newsletter</p>
-                    <form>
-                        <input type="text" class=" px-5 py-4 rounded-lg bg-gray-800 link link--opacity -mr-20 flex-1"
-                            placeholder="Enter your Email">
-                        <button class="items-center  px-10 py-4 bg-white rounded-xl text-gray-900 ">Subscribe</button>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__cols">
+            <div class="footer__column">
+                <p class="footer__title">Company</p>
+                <ul class="footer__links">
+                    <li class="footer__item"><a href="#" class="footer__link">About Us</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Why Choose us</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Pricing</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Testimonial</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <p class="footer__title">Resources</p>
+                <ul class="footer__links">
+                    <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Terms and Condition</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Blog</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <p class="footer__title">Product</p>
+                <ul class="footer__links">
+                    <li class="footer__item"><a href="#" class="footer__link">Project managment</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Time tracker</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Time schedule</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Lead generate</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Remote Collaboration</a></li>
+                </ul>
+            </div>
+            <div class="footer__column-logo">
+                <img class="footer__logo" src="/img/Finsweet white logo.svg" alt="">
+                <div class="footer__subscribe">
+                    <p class="footer__newsletter">Subscribe to our Newsletter</p>
+
+                    <form class="footer__form">
+                        <input class="footer__input" placeholder="Enter your Email">
+                        <button class="footer__button">Subscribe</button>
                     </form>
                 </div>
             </div>
+        </div>
 
-            <div class="flex py-14 items-center">
-                <div class="flex-grow border-t border-gray-400"></div>
-                <span class="flex-shrink mx-10 ">
-                    <div class="flex space-x-8">
-                        <p class="not-italic font-normal text-xs leading-4 text-white opacity-50">© Copyright Finsweet
-                            2022</p>
-                        <img class="footer-icon-opacity" src="/img/Facebook.svg" alt="">
-                        <img class="footer-icon-opacity" src="img/Twitter.svg" alt="">
-                        <img class="footer-icon-opacity" src="/img/Instagram.svg" alt="">
-                        <img class="footer-icon-opacity" src="/img/LinkedIn.svg" alt="">
-                    </div>
-                </span>
-                <div class="flex-grow border-t border-gray-400"></div>
-            </div>
+        <div class="footer__bottom-row">
+            <div class="footer__border-left"></div>
+            <span class="footer__border-icon-distance">
+                <div class="footer__icon-space-between">
+                    <p class="footer__copyright">© Copyright
+                        Finsweet
+                        2022</p>
+                    <img class="footer__icon-opacity" src="/img/Facebook.svg" alt="">
+                    <img class="footer__icon-opacity" src="img/Twitter.svg" alt="">
+                    <img class="footer__icon-opacity" src="/img/Instagram.svg" alt="">
+                    <img class="footer__icon-opacity" src="/img/LinkedIn.svg" alt="">
+                </div>
+            </span>
+            <div class="footer__border-right"></div>
         </div>
 
         <button class="items-center bg-black text-white rounded-full text-sm h-10 w-28">

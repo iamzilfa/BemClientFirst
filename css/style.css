@@ -11,28 +11,36 @@
 }
 
 
-
 @layer components {
 
 /* Navbar page */
 
-.home-nav__header {
+.nav__header {
     @apply flex flex-col space-y-20
 }
 
-.home-nav__content {
+.nav__content {
     @apply flex justify-between items-center py-4 px-20
 }
 
-.home-nav__list {
+.nav__logo, .footer__logo {
+    @apply w-32 h-8
+}
+
+.nav__list {
     @apply flex items-center space-x-8
 }
 
-.home-nav__item {
+.nav__item {
     @apply style-guide-buton-title style-guide-buton-title--dark-color
 }
 
-.home-nav__button {
+.nav__item--active{
+    background: linear-gradient(175.67deg, #D7E7F9 13.12%, #D5F4EC 96.48%);
+    @apply text-[#6B7CFF] px-6 py-2 rounded-3xl font-bold
+}
+
+.nav__button {
     @apply flex flex-row justify-center items-center py-4 px-10 bg-gray-900 rounded-xl not-italic font-bold text-base leading-6 text-center text-white
 }
 
@@ -46,7 +54,7 @@
     @apply flex flex-col items-center text-center space-y-12 my-24 mx-40
 }
 
-.home-header__heading-one {
+.home-header__title, .home-quality__title {
     @apply not-italic font-bold text-5xl leading-tight text-center text-gray-900
 }
 
@@ -55,7 +63,7 @@
 }
 
 .home-header__form{
-    @apply bg-white  flex justify-between rounded-3xl p-2
+    @apply bg-white flex justify-between rounded-3xl p-2
 }
 
 .home-header__input{
@@ -63,10 +71,397 @@
 }
 
 .home-header__button {
-    @apply py-4 px-12 rounded-xl bg-[#1D2130] font-bold text-base leading-6 text-center text-white
+    @apply py-4 px-12 rounded-xl bg-darkGrey font-bold text-base leading-6 text-center text-white
 }
 
 /* Main page */
+
+.home-quality{
+    @apply flex flex-col items-center space-y-10 
+}
+
+.home-quality__content{
+    @apply flex flex-col items-center space-y-7
+}
+
+.home-quality__label, .home-discover__label, .home-why-us__label{
+    background: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
+    @apply not-italic font-bold text-2xl bg-clip-text text-transparent
+}
+
+.home-discover__title{
+    @apply font-bold text-5xl leading-tight text-gray-900
+}
+
+.home-discover__paragraph{
+    @apply not-italic font-normal text-base text-gray-900 leading-normal
+}
+
+.home-discover__list{
+    @apply flex flex-col space-y-7
+}
+
+.home-discover__item{
+    @apply flex items-center space-x-8
+}
+
+.home-discover__item-description{
+    @apply flex flex-col space-y-3
+}
+
+.home-discover__item-title{
+    @apply not-italic font-bold text-2xl text-gray-900
+}
+
+.home-discover__item-description{
+    @apply not-italic font-normal text-lg leading-6 text-gray-900
+}
+
+.home-why-us{
+    @apply flex items-stretch space-x-12 pt-28 px-20
+}
+
+.home-why-us__content{
+    @apply flex flex-col space-y-4
+}
+
+.home-why-us__title{
+    @apply font-bold text-5xl leading-tight text-gray-900
+}
+
+.home-why-us__description{
+    @apply not-italic font-normal text-base text-gray-900 leading-normal
+}
+
+.home-why-us__list{
+    @apply flex flex-col space-y-10
+}
+
+.home-why-us__list-item{
+    @apply flex items-center space-x-4
+}
+
+.home-why-us__list-description{
+    @apply not-italic font-medium text-xl leading-6 text-darkGrey
+}
+
+.home__conversions{
+    @apply bg-conversions-background-image
+}
+
+.home__conversions-content{
+    @apply flex items-center p-20 mt-20
+}
+
+.home__conversions-content-text{
+    @apply flex flex-col space-y-6
+}
+
+.home__conversions-content-title{
+    @apply font-bold text-5xl leading-tight text-gray-900
+}
+
+.home__conversions-content-paragraph{
+    @apply not-italic font-normal text-base text-gray-900 leading-normal
+}
+
+.home__conversions-content-button{
+    @apply w-40 h-12 bg-gray-900 rounded-xl not-italic font-bold text-base leading-6 text-center text-white
+}
+
+
+.home-quality__list{
+    @apply flex justify-between items-center bg-gray-300 rounded-3xl back-home px-10 space-x-6
+}
+
+.home-quality__list-item{
+    @apply flex flex-col space-y-5
+}
+
+.home-quality__icon{
+    @apply w-8 h-12
+}
+
+.home-quality__item-subtitle{
+    @apply not-italic font-bold text-3xl text-gray-900
+}
+
+.home-quality__item-paragraph{
+    @apply not-italic font-normal text-base leading-6 text-gray-900 opacity-80
+}
+
+
+.label {
+    background: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
+    @apply not-italic font-bold text-2xl bg-clip-text text-transparent
+}
+
+
+.home__different-logos{
+    @apply flex justify-between items-center p-20
+}
+
+.home-discover{
+    @apply flex justify-between items-center m-20
+}
+
+.home-discover__description{
+    @apply flex flex-col space-y-8
+}
+
+
+
+.home-feature{
+    @apply flex flex-col justify-between items-center space-y-14
+}
+
+.home-feature__list{
+    @apply flex justify-between items-center rounded-3xl back-home-pink px-10 space-x-3
+}
+
+.home-feature__list-item{
+    @apply flex flex-col space-y-5
+}
+
+.home-feature__list-item-icon{
+    @apply w-10 h-10
+}
+
+.home-feature__list-item-title{
+    @apply not-italic font-bold text-4xl leading-tight text-gray-900
+}
+
+.home-feature__list-item-paragraph{
+    @apply not-italic font-normal text-base leading-6 text-gray-900 opacity-80
+}
+
+.home-feature__title{
+    @apply font-bold text-5xl leading-tight text-gray-900
+}
+
+
+.home-testimonial{
+    @apply flex flex-col justify-between items-center space-y-20 m-20
+}
+
+.home-testimonial__title{
+    @apply font-bold text-5xl leading-tight text-gray-900
+}
+
+.home-testimonial__card{
+    @apply flex items-stretch space-x-5
+}
+
+.home-testimonial__card-item{
+    @apply flex flex-col items-center pt-16 space-y-6  border-2 rounded-3xl br
+}
+
+.home-testimonial__card-text{
+    @apply not-italic font-semibold text-lg leading-6 text-center text-gray-900
+}
+
+.home-testimonial__profile{
+    @apply flex flex-col items-center space-y-1
+}
+
+.home-testimonial__profile-name{
+    @apply not-italic font-medium text-xl leading-6 text-center text-gray-900
+}
+
+.home-testimonial__profile-professional{
+    @apply not-italic font-normal text-xs leading-4 text-center text-gray-900
+}
+
+
+.contact {
+    height: 170vh;
+    @apply bg-bottom bg-no-repeat bg-cover bg-contact-background-image
+}
+
+.contact__content{
+    @apply mx-20 pt-20 flex flex-col space-y-20
+}
+
+.contact__title{
+    @apply not-italic font-bold text-5xl leading-4 text-center text-gray-900
+}
+
+.contact__form{
+    @apply flex flex-col bg-[#F0F2FE] rounded-3xl p-20 space-y-10
+}
+
+.contact__form-description{
+    @apply space-y-6
+}
+
+.contact__form-fields {
+    @apply flex flex-col space-y-4
+}
+
+.contact__form-text-field {
+    @apply h-16 pl-4 input-width bg-white not-italic font-normal rounded-lg text-base leading-6 text-gray-900 opacity-80
+}
+
+.contact__form-text-field--width-doubled {
+    width: 38.875rem;
+}
+
+.contact__form-text-field--width-height-doubled{
+    width: 38.875rem;
+    @apply h-40
+}
+
+.contact__form-title{
+    @apply not-italic font-bold text-4xl leading-5 text-gray-900
+}
+
+.contact__message{
+@apply not-italic font-normal text-lg leading-6 text-gray-900
+}
+
+.contact__details {
+    @apply flex flex-col space-y-14
+}
+
+.contact__item{
+    @apply flex items-center space-x-8
+}
+
+.contact__address{
+    @apply space-y-2
+}
+
+.contact__communication{
+    @apply not-italic font-bold text-2xl leading-5 text-gray-900
+}
+
+.contact__description{
+    @apply not-italic font-normal text-base leading-6 text-gray-900 opacity-60
+}
+
+.contact__form-button{
+    @apply px-2 py-4 rounded-xl items-center bg-gray-900 not-italic font-bold text-base text-center text-white
+}
+
+.contact__names-field{
+    @apply space-x-3
+}
+
+.contact__form-sections{
+    @apply flex justify-between
+}
+
+.component{
+    height: 70vh;
+    @apply bg-component-background-image bg-cover bg-no-repeat bg-top 
+}
+
+.component__content{
+    @apply flex flex-col items-center text-center space-y-8
+}
+
+.component__title{
+    @apply font-bold text-5xl text-blackcolor leading-tight
+}
+
+.component__paragraph{
+    @apply not-italic font-normal text-base leading-6 text-center text-gray-900
+}
+
+.component__button{
+    @apply button-style-width button-style-width--size button-style-width--color style-guide-subtitle--button-text
+}
+
+
+
+
+.footer{
+    @apply bg-blackcolor
+}
+
+
+.footer__cols{
+    @apply grid grid-flow-col px-20 gap-10 pt-14 text-white
+}
+
+.footer__column{
+    @apply flex flex-col space-y-5
+}
+
+.footer__title{
+    @apply not-italic font-semibold text-lg leading-6 capitalize text-white
+}
+
+.footer__links{
+    @apply flex flex-col space-y-3
+}
+
+.footer__item{
+    @apply not-italic font-normal text-base leading-6 text-white opacity-60
+}
+
+.footer__column-logo{
+    @apply flex flex-col space-y-8
+}
+
+.footer__subscribe{
+    @apply space-y-2
+}
+
+.footer__newsletter{
+    @apply not-italic font-semibold text-lg leading-6 text-white
+}
+
+.footer__form{
+    @apply bg-blackRock flex justify-between rounded-3xl  
+}
+
+.footer__input{
+    @apply rounded-xl pl-4 not-italic font-normal text-base leading-6 capitalize text-gray-900 bg-blackRock 
+}
+
+.footer__button{
+    @apply py-4 px-12 rounded-xl font-bold text-base leading-6 text-center text-darkGrey bg-white
+}
+
+.footer__bottom-row{
+    @apply flex py-10 px-20 items-center
+}
+
+.footer__copyright{
+    @apply not-italic font-normal text-xs leading-4 text-white opacity-50
+}
+
+.footer__border-left, .footer__border-right{
+    @apply flex-grow border-t border-gray-400
+}
+
+.footer__icon-opacity {
+    @apply opacity-50
+}
+
+.footer__icon-space-between {
+    @apply flex space-x-4
+}
+
+.footer__border-icon-distance{
+    @apply flex-shrink mx-5
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -100,19 +495,13 @@
     height: 95vh;
 }
 
-.maine-nav__logo {
-    @apply h-8 w-32
-}
-
-
-
 
 .wid {
     width: 576px;
 }
 
 
-.blur-grad {
+.home__conversions {
     background-image: url('/img/Blur\ Gradient\ \(3\).svg');
 }
 
@@ -194,13 +583,6 @@
     height: 100vh;
 }
 
-.contact-background-image {
-    background-image: url('/img/Blur\ Gradient\ \(7\).png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    height: 150vh;
-}
 
 .textarea {
     width: 622px;
@@ -210,9 +592,7 @@
     width: 303px;
 }
 
-.input-width--double-size {
-    width: 622px;
-}
+
 
 
 
@@ -265,16 +645,6 @@
     @apply not-italic font-bold text-lg leading-6 text-gray-900 opacity-80
 }
 
-.label {
-
-    background: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-
-    @apply not-italic font-bold text-2xl
-}
 
 
 
@@ -325,7 +695,7 @@
 
 
 .footer-title {
-    @apply not-italic font-semibold text-lg leading-6 capitalize text-white
+    @apply not-italic font-semibold text-lg leading-6 text-white
 }
 
 .footer-links {
@@ -346,17 +716,12 @@
 
 /* Home page */
 
-.component-image--height {
-    height: 70vh;
-}
+
 
 .heading-four {
     @apply not-italic font-bold text-2xl leading-5 text-gray-900;
 }
 
-.active {
-    background: linear-gradient(175.67deg, #D7E7F9 13.12%, #D5F4EC 96.48%);
-    @apply text-[#6B7CFF] px-6 py-2 rounded-3xl font-bold
-}
+
 
 }
